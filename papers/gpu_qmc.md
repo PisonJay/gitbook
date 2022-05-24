@@ -35,7 +35,7 @@ LTLC + Horizon Constraits 可以~~去掉时序约束~~，将时间有限化，�
 
 搜索策略：BFS+DFS，在 Büchi automaton 上搜索。
 
-整体 BFS，但是从节点扩展路径选择 DFS 深度 $$l$$ 的所有路径，交 GPU 验证保留 satisfiable 的。
+整体 BFS，但是从节点扩展路径选择 DFS 深度 $l$ 的所有路径，交 GPU 验证保留 satisfiable 的。
 
 ## Tricks
 
