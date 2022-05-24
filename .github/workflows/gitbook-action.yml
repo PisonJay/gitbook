@@ -12,4 +12,5 @@ jobs:
     - name: Gitbook Action           # https://github.com/ZanderZhao/gitbook-action/releases
       uses: ZanderZhao/gitbook-action@v1.2.4  # -> or ZanderZhao/gitbook-action@master.  If not use master click above, use latest please 
       with:                                   #    or fork this repo and use YourName/gitbook-action@master
+        prepare_install: npm i --unsafe-perm gitbook-plugin-katex-pro -g
         token: ${{ secrets.PERSONAL_TOKEN }}  # -> remember add this in settings/secrets as following
