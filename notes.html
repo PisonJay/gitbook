@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Papers · GitBook</title>
+        <title>Notes · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="papers/gpu_qmc.html" />
     
-    
-    <link rel="prev" href="./" />
+    <link rel="prev" href="papers/gpu_qmc.html" />
     
 
     </head>
@@ -106,7 +104,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="papers.html">
+        <li class="chapter " data-level="1.2" data-path="papers.html">
             
                 <a href="papers.html">
             
@@ -138,7 +136,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="notes.html">
+        <li class="chapter active" data-level="1.3" data-path="notes.html">
             
                 <a href="notes.html">
             
@@ -181,7 +179,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Papers</a>
+        <a href="." >Notes</a>
     </h1>
 </div>
 
@@ -196,13 +194,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="papers">Papers</h1>
-<p>&#x8FD9;&#x91CC;&#x6765;&#x653E;&#x8BFB;&#x8FC7;&#x7684;&#x548C;&#x6B63;&#x5728;&#x8BFB;&#x7684;&#x7EB8;</p>
+                                <h1 id="notes--tips">Notes &amp; Tips</h1>
+<h2 id="3-sat">3-SAT</h2>
+<p>3-SAT &#x4E00;&#x822C;&#x5199;&#x6210; CNF&#xFF0C;&#x56E0;&#x4E3A; DNF &#x7684; SAT &#x662F; trivial &#x7684;&#xFF08;&#x76F4;&#x63A5;&#x8FC7;&#x4E00;&#x904D;&#x5176;&#x4E2D;&#x7684;&#x67D0;&#x4E2A; conjunction &#x5C31;&#x53EF;&#x4EE5;&#x77E5;&#x9053; satisfiable&#xFF09;&#x3002;&#x4F46;&#x662F; CNF -&gt; DNF &#x9700;&#x8981;&#x6307;&#x6570;&#x65F6;&#x95F4;&#x548C; space&#x3002;</p>
+<h2 id="ltl-vs-sat-vs-smt">LTL vs SAT vs SMT</h2>
 <ul>
-<li>QMC (Quantitative Model Checking)<ul>
-<li><a href="papers/gpu_qmc.html">A Design of GPU-Based Quantitative Model Checking</a></li>
+<li>LTLC: Linear Temporal Logic for Control&#xFF0C;&#x7528; Horizon &#x9650;&#x5236;&#x6DF1;&#x5EA6;&#x540E;&#x53EF;&#x4EE5;&#x8F6C;&#x7EBF;&#x6027;&#x89C4;&#x5212;&#xFF0C;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x903B;&#x8F91;&#x53D8;&#x91CF;(literal). &#xFF08;&#x4F46;&#x662F; LTLC &#x8F6C; Buchi Automaton &#x662F;&#x6307;&#x6570;&#x590D;&#x6742;&#x5EA6;&#x7684;&#xFF1F;&#xFF09;</li>
 </ul>
-</li>
+<p><img src="images/LTLC.png" alt="LTLC"></p>
+<ul>
+<li>SAT: &#x6709; boolean literal&#xFF0C;&#x5BFC;&#x81F4;&#x6307;&#x6570;&#x590D;&#x6742;&#x5EA6;</li>
+<li>SMT&#xFF1A;&#x6BD4;&#x8D77; SAT &#x52A0;&#x5165;&#x4E86;&#x66F4;&#x591A;&#x8C13;&#x8BCD;&#xFF0C;&#x66F4;&#x52A0;&#x590D;&#x6742;</li>
 </ul>
 
                                 
@@ -231,14 +233,10 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="papers/gpu_qmc.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: A Design of GPU-Based Quantitative Model Checking">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="papers/gpu_qmc.html" class="navigation navigation-next " aria-label="Next page: A Design of GPU-Based Quantitative Model Checking">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -247,7 +245,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Papers","level":"1.2","depth":1,"next":{"title":"A Design of GPU-Based Quantitative Model Checking","level":"1.2.1","depth":2,"path":"papers/gpu_qmc.md","ref":"papers/gpu_qmc.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex-pro"],"pluginsConfig":{"katex-pro":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"papers.md","mtime":"2022-05-25T01:53:27.518Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T01:53:59.952Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Notes","level":"1.3","depth":1,"previous":{"title":"A Design of GPU-Based Quantitative Model Checking","level":"1.2.1","depth":2,"path":"papers/gpu_qmc.md","ref":"papers/gpu_qmc.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex-pro"],"pluginsConfig":{"katex-pro":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes.md","mtime":"2022-05-25T01:53:27.518Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-25T01:53:59.952Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
